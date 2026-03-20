@@ -1,0 +1,10 @@
+<footer class="py-10 border-t border-gray-100 dark:border-gray-700">
+  <div class="max-w-4xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <p class="text-sm text-gray-600 dark:text-gray-400">&copy; {% year %} {{ site.name }}. All rights reserved.</p>
+    <div class="flex items-center gap-4">
+      <a href="#top" class="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 transition-colors">↑ Back to top</a>
+      <a href="/privacy/" class="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 transition-colors">Privacy</a>
+      <a href="mailto:{{ site.email | obfuscateEmail | safe }}" aria-label="{{ site.email }}" class="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 transition-colors">Contact</a>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,28 @@
+name: Brian Setz
+title: PhD
+jobTitle: Lead of Digital Lab
+metaDescription: "Brian Setz leads the Digital Lab at the University of Groningen. Research focus: Cloud Computing, Green Computing, Internet of Things."
+metaKeywords: "Cloud Computing, Green Computing, IoT, Computing Science, University of Groningen, Digital Lab"
+url: https://briansetz.nl
+email: b.setz@rug.nl
+office: "5161.0492"
+address:
+  street: Nijenborgh 9
+  postal: 9747 AG
+  city: Groningen
+  country: Netherlands
+bio: >-
+  Brian Setz is the lead of the Digital Lab, an initiative of the Computing Science
+  department of the University of Groningen to innovate education. He holds a PhD in
+  Computing Science from the University of Stuttgart, and a masters degree in Computing
+  Science from the University of Groningen. His research interests include: Cloud
+  Computing, Green Computing, Internet of Things, Energy Efficient Data Centers.
+affiliation:
+  type: Organization
+  name: University of Groningen
+social:
+  linkedin: https://nl.linkedin.com/in/briansetz
+  researchgate: https://www.researchgate.net/profile/Brian_Setz
+  googlescholar: https://scholar.google.com/citations?user=iRFNcp8AAAAJ
+  orcid: https://orcid.org/0000-0002-9750-2888
+profileImage: /img/profile.jpg

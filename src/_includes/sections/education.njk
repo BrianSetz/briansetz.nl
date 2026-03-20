@@ -1,0 +1,16 @@
+<section id="education" class="py-16">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-8">Education</h2>
+    <ul role="list" class="space-y-6">
+      {%- for edu in education %}
+      <li class="flex items-start gap-4">
+        <time datetime="{{ edu.year }}" class="shrink-0 mt-1 text-sm font-semibold text-gray-600 dark:text-gray-400 w-12">{{ edu.year }}</time>
+        <div>
+          <h3 class="font-semibold text-gray-900 dark:text-gray-100">{{ edu.degree }}</h3>
+          <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">{{ edu.institution }}</p>
+        </div>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html id="top" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.name }}, {{ site.title }} — {{ site.jobTitle }}</title>
+  <meta name="description" content="{{ site.metaDescription or (site.bio | truncate(160)) }}">
+  <meta name="keywords" content="{{ site.metaKeywords }}">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#111827" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="{{ site.name }}, {{ site.title }}">
+  <meta property="og:description" content="{{ site.metaDescription or (site.bio | truncate(160)) }}">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="{{ site.url }}/">
+  <meta property="og:image" content="{{ site.url }}{{ site.ogImage or site.profileImage }}">
+  <meta property="og:image:width" content="{{ site.ogImageWidth or '192' }}">
+  <meta property="og:image:height" content="{{ site.ogImageHeight or '192' }}">
+  <meta property="og:image:alt" content="Profile photo of {{ site.name }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ site.name }}, {{ site.title }}">
+  <meta name="twitter:description" content="{{ site.metaDescription or (site.bio | truncate(160)) }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ site.ogImage or site.profileImage }}">
+  <link rel="canonical" href="{{ site.url }}/">
+  <link rel="apple-touch-icon" href="/img/profile.jpg">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <script>(function(){if(window.self!==window.top){window.top.location=window.self.location;}var t=localStorage.getItem('theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark');}})();</script>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self' 'sha256-/gm5U6xQW/S5ZshI8A7oa6qNrrAV2pnuJFh6h96J2+E='; img-src 'self' data:; font-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ site.name }}",
+    "url": "{{ site.url }}",
+    "image": "{{ site.url }}{{ site.profileImage }}",
+    "description": "{{ site.metaDescription }}",
+    "jobTitle": "{{ site.jobTitle }}",
+    "affiliation": {
+      "@type": "{{ site.affiliation.type }}",
+      "name": "{{ site.affiliation.name }}"
+    },
+    "alumniOf": [
+      {%- for edu in education %}
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "{{ edu.institution }}"
+      }{% if not loop.last %},{% endif %}
+      {%- endfor %}
+    ],
+    "sameAs": [
+      "{{ site.social.linkedin }}",
+      "{{ site.social.researchgate }}",
+      "{{ site.social.googlescholar }}",
+      "{{ site.social.orcid }}"
+    ]
+  }
+  </script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans antialiased">
+
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:bg-white dark:focus:bg-gray-800 focus:text-gray-900 dark:focus:text-gray-100 focus:rounded focus:shadow-lg focus:outline-none">Skip to content</a>
+
+  {% include "sections/nav.njk" %}
+  <noscript><link rel="stylesheet" href="/css/noscript.css"></noscript>
+
+  <main id="main-content">
+    {{ content | safe }}
+  </main>
+
+  {% include "sections/footer.njk" %}
+
+  <script src="/js/theme.js" defer></script>
+  <script src="/js/nav.js" defer></script>
+
+</body>
+</html>

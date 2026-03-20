@@ -1,0 +1,32 @@
+- university: University of Stuttgart
+  courses:
+    - name: Origin and Evolution of the Web
+      years:
+        - 2022
+        - 2021
+        - 2020
+        - 2019
+        - 2018
+    - name: Operating Systems
+      years:
+        - 2022
+        - 2021
+        - 2020
+        - 2019
+        - 2018
+
+- university: University of Groningen
+  courses:
+    - name: Scalable Computing
+      years:
+        - 2018
+        - 2017
+    - name: Web and Cloud Computing
+      years:
+        - 2017
+        - 2016
+        - 2015
+        - 2014
+    - name: Introduction to Computing Science
+      years:
+        - 2016

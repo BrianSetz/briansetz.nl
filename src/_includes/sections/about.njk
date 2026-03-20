@@ -1,0 +1,25 @@
+<section id="about" class="py-16 bg-gray-50 dark:bg-gray-800">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">About</h2>
+    <p class="text-gray-600 dark:text-gray-400 leading-relaxed max-w-3xl">{{ site.bio }}</p>
+
+    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl">
+      <div>
+        <p class="text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wider mb-2">Office</p>
+        <p class="text-gray-700 dark:text-gray-300">{{ site.office }}</p>
+      </div>
+      <div>
+        <p class="text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wider mb-2">Address</p>
+        <address class="text-gray-700 dark:text-gray-300 not-italic">
+          {{ site.address.street }}<br>
+          {{ site.address.postal }} {{ site.address.city }}<br>
+          {{ site.address.country }}
+        </address>
+      </div>
+      <div>
+        <p class="text-xs font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wider mb-2">Email</p>
+        <a href="mailto:{{ site.email | obfuscateEmail | safe }}" aria-label="{{ site.email }}" class="text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300 transition-colors">{{ site.email | obfuscateEmail | safe }}</a>
+      </div>
+    </div>
+  </div>
+</section>

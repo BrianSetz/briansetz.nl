@@ -1,0 +1,75 @@
+- title: "Container-level Energy Observability in Kubernetes Clusters"
+  authors: "B. Pijnacker, B. Setz, V. Andrikopoulos"
+  venue: International Conference on ICT for Sustainability
+  year: 2025
+  url: https://doi.org/10.1109/ICT4S68164.2025.00016
+- title: "Understanding the Energy Consumption of Cloud-native Software Systems"
+  authors: "L. Andringa, B. Setz, V. Andrikopoulos"
+  venue: ACM/SPEC International Conference on Performance Engineering
+  year: 2025
+  url: https://doi.org/10.1145/3676151.3719371
+- title: "A guidebook for sustainability in laboratories"
+  authors: "T. Freese, R. Kat, S. D. Lanooij, T. C. Böllersen, C. M. De Roo, N. Elzinga, M. Beatty, B. Setz, R. R. Weber, I. Malta, T. B. Gandek, A. Krikken, P. Fodran, R. Pollice, M. M. Lerch"
+  venue: ChemRxiv
+  year: 2024
+  url: https://doi.org/10.59877/FCXC3888
+- title: "Enough Hot Air: The Role of Immersion Cooling"
+  authors: "K. Haghshenas, B. Setz, Y. Bloch, M. Aiello"
+  venue: Energy Informatics
+  year: 2023
+  url: https://doi.org/10.1186/s42162-023-00269-0
+- title: "Energy Smart Buildings: Parallel Uniform Cost-Search with Energy Storage and Generation"
+  authors: "B. Setz, K. Haghshenas, M. Aiello"
+  venue: arXiv
+  year: 2022
+  url: https://doi.org/10.48550/arXiv.2211.08969
+- title: "CO2 Emission Aware Scheduling for Deep Neural Network Training Workloads"
+  authors: "K. Haghshenas, B. Setz, Y. Bloch, M. Aiello"
+  venue: IEEE International Conference on Big Data
+  year: 2022
+  url: https://doi.org/10.1109/BigData55660.2022.10020544
+- title: "A Comparison of Open-Source Home Automation Systems"
+  authors: "B. Setz, S. Graef, D. Ivanova, A. Tiessen, M. Aiello"
+  venue: IEEE Access
+  year: 2021
+  url: https://doi.org/10.1109/ACCESS.2021.3136025
+- title: "Towards Real-Time Monitoring of Data Centers using Edge Computing"
+  authors: "B. Setz, M. Aiello"
+  venue: European Conference On Service-Oriented And Cloud Computing
+  year: 2020
+  url: https://doi.org/10.1007/978-3-030-44769-4_11
+- title: "A Data-Driven Approach to Monitoring Colocation Data Centers"
+  authors: "B. Setz, A. Lazovik, M. Aiello"
+  venue: IEEE International Conference on Big Data Intelligence and Computing
+  year: 2019
+  url: https://doi.org/10.1109/DataCom.2019.00043
+- title: "Mining Sequential Patterns for Appliance Usage Prediction"
+  authors: "M. Kalksma, B. Setz, A. Rizky Pratama, I. Georgievski, M. Aiello"
+  venue: International Conference on Smart Cities and Green ICT Systems
+  year: 2018
+  url: https://doi.org/10.5220/0006669500230033
+- title: "Best Practices for Sustainable Data Centers"
+  authors: "V. Dinesh Reddy, B. Setz, G. Subrahmanya V.R.K. Rao, G.R. Gangadharan, M. Aiello"
+  venue: IEEE IT Professional
+  year: 2018
+  url: https://doi.org/10.1109/MITP.2018.053891338
+- title: "Planning meets activity recognition: Service coordination for intelligent buildings"
+  authors: "I. Georgievski, T. A. Nguyen, F. Nizamic, B. Setz, A. Lazovik, M. Aiello"
+  venue: Pervasive and Mobile Computing
+  year: 2017
+  url: https://doi.org/10.1016/j.pmcj.2017.02.008
+- title: "Metrics for Sustainable Data Centers"
+  authors: "V. Dinesh Reddy, B. Setz, G. Subrahmanya V.R.K. Rao, G.R. Gangadharan, M. Aiello"
+  venue: IEEE Transactions on Sustainable Computing
+  year: 2017
+  url: https://doi.org/10.1109/TSUSC.2017.2701883
+- title: "Power Management of Personal Computers based on User Behaviour"
+  authors: "B. Setz, F. Nizamic, A. Lazovik, M. Aiello"
+  venue: International Conference on Smart Cities and Green ICT Systems
+  year: 2016
+  url: https://doi.org/10.5220/0005762604090416
+- title: "Sleepy, the Smart Activity Monitoring and Energy Saving Solution for Personal Computers"
+  authors: "B. Setz, F. Nizamic, T. A. Nguyen, A. Lazovik, M. Aiello"
+  venue: Proceedings of the Erasmus Energy Forum 2014, Rotterdam, The Netherlands
+  year: 2014
+  url: /docs/setz2014sleepy.pdf

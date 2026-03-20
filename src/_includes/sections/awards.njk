@@ -1,0 +1,26 @@
+<section id="awards" class="py-16 bg-gray-50 dark:bg-gray-800">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-8">Honours, Awards & Funds</h2>
+    <ul role="list" class="space-y-6">
+      {%- for award in awards %}
+      <li>
+        <div>
+          <div class="flex items-center gap-2">
+            {%- if award.url %}
+            <a href="{{ award.url }}" target="_blank" rel="noopener noreferrer"
+               aria-label="{{ award.title }} (opens in new tab)"
+               class="font-semibold text-gray-900 dark:text-gray-100 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+              {{ award.title }}
+            </a>
+            {%- else %}
+            <span class="font-semibold text-gray-900 dark:text-gray-100">{{ award.title }}</span>
+            {%- endif %}
+            {% if award.year %}<span class="text-xs font-medium px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400">{{ award.year }}</span>{% endif %}
+          </div>
+          <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">{{ award.description }}</p>
+        </div>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,40 @@
+<header class="py-20 md:py-28" aria-label="Introduction">
+  <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+    <div class="shrink-0 hero-photo">
+      <img
+        src="{{ site.profileImage }}"
+        alt="Profile photo of {{ site.name }}, {{ site.title }}"
+        class="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover shadow-lg dark:shadow-gray-900/50"
+        width="192"
+        height="192"
+        fetchpriority="high"
+      >
+    </div>
+    <div class="text-center md:text-left hero-text">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 tracking-tight">{{ site.name }}, {{ site.title }} — {{ site.affiliation.name }}</h1>
+      <p class="mt-2 text-xl text-gray-600 dark:text-gray-400 font-medium">{{ site.jobTitle }}</p>
+      <div class="mt-6 flex flex-wrap justify-center md:justify-start gap-3">
+        <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-indigo-50 dark:hover:bg-indigo-900/30 hover:text-indigo-700 dark:hover:text-indigo-400 transition-colors">
+          {%- include "icons/linkedin.svg" %}
+          LinkedIn<span class="sr-only"> (opens in new tab)</span>
+        </a>
+        <a href="{{ site.social.researchgate }}" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-indigo-50 dark:hover:bg-indigo-900/30 hover:text-indigo-700 dark:hover:text-indigo-400 transition-colors">
+          {%- include "icons/researchgate.svg" %}
+          ResearchGate<span class="sr-only"> (opens in new tab)</span>
+        </a>
+        <a href="{{ site.social.googlescholar }}" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-indigo-50 dark:hover:bg-indigo-900/30 hover:text-indigo-700 dark:hover:text-indigo-400 transition-colors">
+          {%- include "icons/googlescholar.svg" %}
+          Google Scholar<span class="sr-only"> (opens in new tab)</span>
+        </a>
+        <a href="{{ site.social.orcid }}" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-indigo-50 dark:hover:bg-indigo-900/30 hover:text-indigo-700 dark:hover:text-indigo-400 transition-colors">
+          {%- include "icons/orcid.svg" %}
+          ORCID<span class="sr-only"> (opens in new tab)</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
