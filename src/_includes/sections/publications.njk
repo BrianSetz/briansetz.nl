@@ -1,0 +1,23 @@
+<section id="publications" class="py-16 bg-gray-50 dark:bg-gray-800">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-8">Publications</h2>
+    <ul role="list" class="space-y-6">
+      {%- for pub in publications %}
+      <li class="group">
+        <div>
+          {%- if pub.url %}
+          <a href="{{ pub.url }}" target="_blank" rel="noopener noreferrer"
+             class="font-medium text-gray-900 dark:text-gray-100 underline decoration-gray-300 dark:decoration-gray-600 underline-offset-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 group-hover:decoration-indigo-300 dark:group-hover:decoration-indigo-400 transition-colors leading-snug">
+            {{ pub.title }}<span class="sr-only"> (opens in new tab)</span>
+          </a>
+          {%- else %}
+          <span class="font-medium text-gray-900 dark:text-gray-100 leading-snug">{{ pub.title }}</span>
+          {%- endif %}
+          <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">{{ pub.authors }}</p>
+          <p class="text-sm text-gray-600 dark:text-gray-400">In <em>{{ pub.venue }}</em>, <time datetime="{{ pub.year }}">{{ pub.year }}</time></p>
+        </div>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>

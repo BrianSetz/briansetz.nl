@@ -1,0 +1,139 @@
+- title: "Estimating Container-level Power Usage in Kubernetes"
+  authors: "B. Pijnacker"
+  type: Master Thesis
+  year: 2024
+
+- title: "Estimating Energy Consumption of Cloud-Native Applications"
+  authors: "L. Andringa"
+  type: Master Thesis
+  year: 2024
+
+- title: "Docker Kotlin"
+  authors: "R. Sterzing, J. Lazarini, A. Khanchi, T. Kuntkes"
+  type: Software Engineering Project
+  year: 2024
+
+- title: "Exploring the effects of Location and Time on the calculation of the Carbon Footprint of Computing"
+  authors: "K. Chasiotis"
+  type: Honours Project + Bachelor Thesis
+  year: 2024
+
+- title: "Carbon Footprint Monitoring up to Container-Level in Virtualized Environments: A Hardware and Hypervisor-Free Approach"
+  authors: "T. Pol"
+  type: Master Thesis
+  year: 2024
+
+- title: "Observability in an OpenStack cluster"
+  authors: "J. Lipka"
+  type: Master Research Internship
+  year: 2024
+
+- title: "UI Composition in Microservices"
+  authors: "G. Calcedo"
+  type: Master Research Internship
+  year: 2023
+
+- title: "An Analysis of Four Server Power Models"
+  authors: "F. S. Müller"
+  type: Bachelor Thesis
+  year: 2022
+
+- title: "Determining Carbon Dioxide Footprint using Data Center Simulators"
+  authors: "M. Keppler"
+  type: Bachelor Thesis
+  year: 2021
+
+- title: "Sensor Fusion"
+  authors: "R. A. Belmannu"
+  type: Study Project
+  year: 2021
+
+- title: "Interactive Dashboard"
+  authors: "M. Suresh"
+  type: Study Project
+  year: 2021
+
+- title: "Robot Operating System: Pi on Wheels"
+  authors: "N. Caycedo, S. Eitschberger, L. Grohmann, P. Längerer, S. Paule, S. Xie"
+  type: Studienprojekt
+  year: 2021
+
+- title: "Dynamic Personalized Home Automation Rules based on Multi-User Feedback"
+  authors: "D. Ivanova"
+  type: Master Thesis
+  year: 2021
+
+- title: "A Review of Modelling Approaches for Computer System Components"
+  authors: "M. Dullak, N. Margotti, S. Zindl"
+  type: Fachstudien
+  year: 2021
+
+- title: "Analysis of Open-Source Home Automation Systems"
+  authors: "S. Graef, D. Ivanova, A. Tiessen"
+  type: Prozessanalyse
+  year: 2020
+
+- title: "HaaS: Human as a Sensor"
+  authors: "P. Moscoso, D. Steinacker, S. Wonner, J. Zahrabi"
+  type: Entwicklungsprojekt
+  year: 2020
+
+- title: "Internet of Things and Data Centers"
+  authors: "I. Fourati"
+  type: Bachelor Thesis
+  year: 2020
+
+- title: "A Qualitative Analysis of Data Center Simulators"
+  authors: "C. Goller, M. Keppler, D. Krakowiak"
+  type: Fachstudie
+  year: 2020
+
+- title: "Serverless Public Dashboards for Smart Environments"
+  authors: "M. Amann, J. Baireuther, S. Beck, S. Graef, M. Graf, T. Gutierrez, D. Ivanova, M. Kenzler, C. Zorn"
+  type: Entwicklungsprojekt
+  year: 2019
+
+- title: "A Hardware Scale Model of a Data Centre"
+  authors: "Y. Tijsma"
+  type: Master Thesis
+  year: 2019
+
+- title: "Data Center Simulator for Sustainable Data Centers"
+  authors: "E. Omar"
+  type: Master Thesis
+  year: 2019
+
+- title: "Adaptive On-the-fly Changes in Distributed Data Processing Pipelines"
+  authors: "T. Albers"
+  type: Master Thesis
+  year: 2018
+
+- title: "GitHub Data Analytics"
+  authors: "A. Ciobisca, A. Isac"
+  type: Short Programming Project
+  year: 2017
+
+- title: "Host Health from a Containers' Perspective"
+  authors: "A. Curganov"
+  type: Master Research Internship
+  year: 2016
+
+- title: "Creating Automatic Data Aggregation and Deletion Systems for the Scalable Web"
+  authors: "G. Klinkenberg, Y. Tijsma"
+  type: Master Research Internship
+  year: 2016
+
+- title: "Dynamic Modification of Distributed Data Analysis"
+  authors: "T. Albers"
+  type: Master Research Internship
+  year: 2016
+
+- title: "Service Discovery"
+  authors: "W.G. Menninga"
+  type: Master Research Internship
+  year: 2016
+
+- title: "Sleepy for Linux – Power Management Framework for Workstations"
+  authors: "T. Hoeksema, M. Medema"
+  type: Bachelor Thesis
+  year: 2015

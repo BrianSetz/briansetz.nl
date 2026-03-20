@@ -1,0 +1,66 @@
+name: Bug report
+description: Report a layout issue, broken link, or build error
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Please fill in as much detail as possible.
+
+  - type: input
+    id: url
+    attributes:
+      label: Page URL
+      description: Which page is affected? (e.g. https://briansetz.nl or /privacy/)
+      placeholder: https://briansetz.nl
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      description: A clear description of what the problem is.
+      placeholder: The navigation menu does not close after selecting a link on mobile.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can the bug be reproduced?
+      placeholder: |
+        1. Open the site on a mobile device
+        2. Tap the hamburger menu
+        3. Tap a nav link
+        4. Menu stays open
+    validations:
+      required: false
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Where does the bug occur?
+      options:
+        - Live site (briansetz.nl)
+        - Local development build
+        - Both
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and OS
+      placeholder: Firefox 134 on Windows 11
+    validations:
+      required: false

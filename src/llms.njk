@@ -1,0 +1,30 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+# {{ site.name }}
+
+> {{ site.bio }}
+
+## About
+
+- [Homepage]({{ site.url }}/): Biography, research interests, contact, and all sections
+- [Google Scholar]({{ site.social.googlescholar }}): Citation metrics and full bibliography
+- [ORCID]({{ site.social.orcid }}): Persistent researcher identifier with publication list
+- [ResearchGate]({{ site.social.researchgate }}): Research profile and publication downloads
+
+## Publications
+
+{% for pub in publications -%}
+- [{{ pub.title }}]({{ pub.url | absoluteUrl(site.url) }}): {{ pub.authors | safe }}. {{ pub.venue }}, {{ pub.year }}
+{% endfor %}
+## Projects
+
+{% for project in projects -%}
+- [{{ project.title }}]({{ project.url | absoluteUrl(site.url, site.url + "/#projects") }}): {{ project.description | striptags | trim | truncate(120) | safe }}
+{% endfor %}
+## Optional
+
+- [LinkedIn]({{ site.social.linkedin }}): Professional profile
+- [GitHub]({{ site.social.github }}): Source code for this website
+- [Privacy Policy]({{ site.url }}/privacy/): Privacy policy
