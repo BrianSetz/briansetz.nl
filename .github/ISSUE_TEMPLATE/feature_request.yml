@@ -1,0 +1,43 @@
+name: Feature request
+description: Suggest an improvement to the template or site
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Feature requests for improvements to the **code and templates** are welcome.
+        Changes to personal content (publications, CV data, images) are out of scope.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: A concise description of the feature you would like to see.
+      placeholder: Add support for a "Talks" section driven by a YAML data file.
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why would this be useful? Who would benefit?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Have you considered any alternative approaches or workarounds?
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope check
+      description: Please confirm this request is in scope.
+      options:
+        - label: This is a template/code improvement, not a request to change personal content
+          required: true

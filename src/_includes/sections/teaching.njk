@@ -1,0 +1,21 @@
+<section id="teaching" class="py-12">
+  <div class="max-w-4xl mx-auto px-6">
+    <p class="text-xs font-semibold uppercase tracking-widest text-indigo-600 dark:text-indigo-400 mb-2">Experience</p>
+    <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-8">Teaching</h2>
+    <div class="space-y-8">
+      {%- for position in teaching %}
+      <div>
+        <h3 class="font-semibold text-gray-900 dark:text-gray-100">{{ position.university }}</h3>
+        <div class="space-y-3 mt-4 ml-4 border-l-2 border-indigo-200 dark:border-indigo-800 pl-4">
+          {%- for course in position.courses %}
+          <div>
+            <p class="font-medium text-gray-700 dark:text-gray-300">{{ course.name }}</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">{{ course.years | join(', ') }}</p>
+          </div>
+          {%- endfor %}
+        </div>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>

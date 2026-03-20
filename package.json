@@ -1,0 +1,30 @@
+{
+  "name": "briansetz-nl-static",
+  "version": "1.0.0",
+  "description": "Static CV/showcase site for Brian Setz",
+  "scripts": {
+    "build:11ty": "npx @11ty/eleventy",
+    "build:css": "npx @tailwindcss/cli -i src/css/main.css -o _site/css/main.css --minify",
+    "build:img": "node scripts/images.mjs",
+    "build": "run-s build:11ty build:img build:css",
+    "dev:11ty": "npx @11ty/eleventy --serve --watch",
+    "dev:css": "npx @tailwindcss/cli -i src/css/main.css -o _site/css/main.css --watch",
+    "dev": "run-s build:img && run-p dev:11ty dev:css",
+    "lint:html": "html-validate _site/**/*.html",
+    "lint:lighthouse": "lhci autorun",
+    "lint:links": "lychee --offline --include-fragments --root-dir _site \"_site/**/*.html\""
+  },
+  "keywords": [],
+  "author": "Brian Setz",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.5",
+    "@tailwindcss/cli": "^4.2.2",
+    "js-yaml": "^4.1.1",
+    "npm-run-all2": "^8.0.4",
+    "@lhci/cli": "^0.14.0",
+    "html-validate": "^10.11.2",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^4.2.2"
+  }
+}
