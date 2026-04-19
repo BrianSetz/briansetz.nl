@@ -24,7 +24,8 @@ If you are unsure whether your contribution is in scope, open an issue first.
 3. Start the development server: `npm run dev` (available at `http://localhost:8080`)
 4. Make your changes
 5. Run a production build to verify nothing is broken: `npm run build`
-6. Open a pull request against the `main` branch
+6. Run the end-to-end tests: `npm run test:e2e:install` (one-time), then `npm run test:e2e`
+7. Open a pull request against the `main` branch
 
 ## Pull requests
 

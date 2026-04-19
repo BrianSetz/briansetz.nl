@@ -12,18 +12,23 @@
     "dev": "run-s build:img && run-p dev:11ty dev:css",
     "lint:html": "html-validate _site/**/*.html",
     "lint:lighthouse": "lhci autorun",
-    "lint:links": "lychee --offline --include-fragments --root-dir _site \"_site/**/*.html\""
+    "lint:links": "lychee --offline --include-fragments --root-dir _site \"_site/**/*.html\"",
+    "serve:static": "node tests/e2e/serve.mjs",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:install": "playwright install --with-deps chromium"
   },
   "keywords": [],
   "author": "Brian Setz",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.5",
+    "@lhci/cli": "^0.15.1",
+    "@playwright/test": "^1.59.1",
     "@tailwindcss/cli": "^4.2.2",
+    "html-validate": "^10.13.1",
     "js-yaml": "^4.1.1",
     "npm-run-all2": "^8.0.4",
-    "@lhci/cli": "^0.15.1",
-    "html-validate": "^10.13.1",
     "sharp": "^0.34.5",
     "tailwindcss": "^4.2.2"
   }

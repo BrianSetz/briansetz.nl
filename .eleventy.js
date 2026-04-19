@@ -2,6 +2,13 @@ const yaml = require("js-yaml");
 
 module.exports = async function (eleventyConfig) {
   const { EleventyHtmlBasePlugin } = await import("@11ty/eleventy");
+  const buildDateDisplayFormatter = new Intl.DateTimeFormat("en-US", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  });
+
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
   eleventyConfig.addDataExtension("yml,yaml", (contents) => yaml.load(contents));
@@ -16,6 +23,7 @@ module.exports = async function (eleventyConfig) {
   );
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
   eleventyConfig.addShortcode("buildDate", () => new Date().toISOString().split("T")[0]);
+  eleventyConfig.addShortcode("buildDateReadable", () => `${buildDateDisplayFormatter.format(new Date())}`);
 
   eleventyConfig.addPassthroughCopy("src/docs");
   eleventyConfig.addPassthroughCopy("src/fonts");
