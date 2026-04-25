@@ -30,6 +30,6 @@
     "js-yaml": "^4.1.1",
     "npm-run-all2": "^8.0.4",
     "sharp": "^0.34.5",
-    "tailwindcss": "^4.2.2"
+    "tailwindcss": "^4.2.4"
   }
 }
