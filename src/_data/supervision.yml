@@ -1,3 +1,28 @@
+- title: "RAGLab: A Modular Testing Framework for Evaluating Retrieval-Augmented Generation Components"
+  authors: "A. Zandman"
+  type: Master Thesis
+  year: 2026
+
+- title: "Development of RAG Modules for a Learning Assistant"
+  authors: "D. Bunea"
+  type: Master Research Internship
+  year: 2026
+
+- title: "Design and Implementation of a Web Interface for a RAG Learning Assistant"
+  authors: "I. Loukas"
+  type: Master Research Internship
+  year: 2026    
+
+- title: "Energy Consumption Awareness of Automatic Assessment System Users"
+  authors: "S. Kucharski"
+  type: Master Thesis
+  year: 2026
+
+- title: "Detecting AI-written submissions through plagiarism scanners"
+  authors: "T. van der Eems"
+  type: Bachelor Thesis
+  year: 2026
+
 - title: "Estimating Container-level Power Usage in Kubernetes"
   authors: "B. Pijnacker"
   type: Master Thesis
