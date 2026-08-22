@@ -22,7 +22,7 @@
   "author": "Brian Setz",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.5",
+    "@11ty/eleventy": "^3.1.6",
     "@lhci/cli": "^0.15.1",
     "@playwright/test": "^1.62.1",
     "@tailwindcss/cli": "^4.3.3",
