@@ -26,7 +26,7 @@
     "@lhci/cli": "^0.15.1",
     "@playwright/test": "^1.62.1",
     "@tailwindcss/cli": "^4.3.3",
-    "html-validate": "^11.6.2",
+    "html-validate": "^11.8.0",
     "js-yaml": "^4.1.1",
     "npm-run-all2": "^9.0.3",
     "sharp": "^0.35.3",
